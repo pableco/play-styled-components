@@ -19,7 +19,7 @@ const OUTPUT_CONFIG = {
 
     // IMPORTANT!: This is the name of the global variable exported in browsers
     // Change it for the name you want your component to have as window.NAME
-    library: 'PlayScss',
+    library: 'PlayStyledComponents',
 
     libraryTarget: 'umd',
 };

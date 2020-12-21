@@ -1,12 +1,12 @@
 {
-  "name": "play-scss",
+  "name": "play-styled-components",
   "version": "0.0.1",
-  "description": "Example react scss playground",
+  "description": "Example react styled components",
   "main": "./src/index.js",
   "scripts": {
     "start": "webpack-dashboard -- webpack serve --config ./webpack.dev.js",
     "dist": "webpack --config ./webpack.dist.js",
-    "deploy": "webpack --config webpack.prod.js && surge ./dist/ play-scss.surge.sh",
+    "deploy": "webpack --config webpack.prod.js && surge ./dist/ play-styled-components.surge.sh",
     "test:ci": "NODE_ENV=test jest test",
     "test": "NODE_ENV=test jest test --notify --watch",
     "cleancoverage": "rm -rf coverage",
@@ -94,7 +94,9 @@
     "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "styled-components": "^5.2.1",
+    "webfontloader": "^1.6.28"
   },
   "husky": {
     "hooks": {

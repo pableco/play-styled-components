@@ -6,7 +6,6 @@ webpack.dev.js
 webpack.common.js
 webpack.deploy.js
 webpack.prod.js
-postcss.config.js
 .eslintignore
 .eslintrc
 .npmignore
