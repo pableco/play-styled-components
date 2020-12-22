@@ -15,6 +15,8 @@ Model.defaultProps = {
     description: `Aenean vitae neque ultricies, egestas eros non, bibendum purus.
     Suspendisse sodales quam non lectus imperdiet dignissim.`,
     imgBg: 'https://source.unsplash.com/random',
-    subTitle: 'Subtitle test',
-    title: 'Test title',
+    subTitle: 'Suspendisse sodales quam',
+    title: 'Aenean vitae neque ultricies',
+    extraInfo: 'Quam non lectus imperdiet dignissim',
+    extraLink: 'more info',
 };
