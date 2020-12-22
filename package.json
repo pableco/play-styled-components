@@ -4,7 +4,7 @@
   "description": "Example react styled components",
   "main": "./src/index.js",
   "scripts": {
-    "start": "webpack-dashboard -- webpack serve --config ./webpack.dev.js",
+    "start": "webpack serve --config ./webpack.dev.js",
     "dist": "webpack --config ./webpack.dist.js",
     "deploy": "webpack --config webpack.prod.js && surge ./dist/ play-styled-components.surge.sh",
     "test:ci": "NODE_ENV=test jest test",
@@ -22,8 +22,8 @@
     "postversion": "git push --follow-tags",
     "lint": "eslint . && npm run style-lint",
     "lint:fix": "eslint . --fix",
-    "style-lint": "npx stylelint 'src/**/*.scss' -o styleLintReport.txt",
-    "style-lint:fix": "npx stylelint 'src/**/*.scss' --fix"
+    "style-lint": "npx stylelint \"./src/*\" -o styleLintReport.txt",
+    "style-lint:fix": "npx stylelint \"./src/*\" --fix"
   },
   "repository": {
     "type": "git",
@@ -66,7 +66,6 @@
     "jest": "^26.6.3",
     "mini-css-extract-plugin": "^1.3.3",
     "node-sass": "^5.0.0",
-    "postcss": "^8.2.1",
     "postcss-loader": "^4.1.0",
     "postcss-preset-env": "^6.7.0",
     "postcss-smart-import": "^0.7.6",
@@ -96,6 +95,10 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "styled-components": "^5.2.1",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-order": "^4.1.0",
+    "stylelint-processor-styled-components": "^1.10.0",
     "webfontloader": "^1.6.28"
   },
   "husky": {

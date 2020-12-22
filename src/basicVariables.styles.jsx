@@ -191,20 +191,20 @@ const animationTime = {
 };
 
 const borders = {
-    borderWidthS: '.1rem',
-    borderWidthM: '.2rem',
-    borderWidthL: '.3rem',
+    borderS: '.1rem',
+    borderM: '.2rem',
+    borderL: '.3rem',
 };
 
 const icons = {
-    iconsSizeXXS: '1rem',
-    iconsSizeXS: '1.4rem',
-    iconsSizeS: '1.6rem',
-    iconsSizeB: '1.8rem',
-    iconsSizeM: '2rem',
-    iconsSizeMM: '2.4rem',
-    iconsSizeML: '2.8rem',
-    iconsSizeL: '3.6rem',
+    iconsXXS: '1rem',
+    iconsXS: '1.4rem',
+    iconsS: '1.6rem',
+    iconsB: '1.8rem',
+    iconsM: '2rem',
+    iconsMM: '2.4rem',
+    iconsML: '2.8rem',
+    iconsL: '3.6rem',
 };
 
 const images = {

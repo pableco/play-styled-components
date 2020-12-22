@@ -3,6 +3,16 @@ import { ThemeProvider } from 'styled-components';
 
 import theme from './basicVariables.styles.jsx';
 import GlobalStyle from './Global.styles.jsx';
+import {
+    CardFooterStyles,
+    DescriptionStyles,
+    LinkStyles,
+    SubTitleStyles,
+    SmallText,
+    TitleStyles,
+    Thumbnail,
+    WrapperStyles,
+} from './View.styles.jsx';
 
 const WebFont = require('webfontloader');
 
@@ -16,6 +26,7 @@ const View = ({
     cta,
     description,
     extraInfo,
+    extraLink,
     imgBg,
     imgBgStyles,
     subTitle,
@@ -23,21 +34,25 @@ const View = ({
 }) => (
     <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <section className="listItem">
-            <figure className="listItem__figure">
-                <figcaption className="listItem__figcaption">
-                    <h3 className="listItem__title">{title}</h3>
-                    <h4 className="listItem__subTitle">{subTitle}</h4>
+        <WrapperStyles>
+            <figure>
+                <figcaption>
+                    <TitleStyles>{title}</TitleStyles>
                 </figcaption>
-                <div className="listItem__imgFix" style={imgBgStyles}></div>
-                <img className="listItem__img" src={imgBg} alt={`${title} image`} />
-                <div className="listItem__content">
-                    <p className="listItem__description">{description}</p>
+                <Thumbnail style={imgBgStyles}>
+                    <img src={imgBg} alt={`${title} image`} />
+                </Thumbnail>
+                <SubTitleStyles>{subTitle}</SubTitleStyles>
+                <DescriptionStyles>
+                    <p>{description}</p>
                     <button className="listItem__action">{cta}</button>
-                </div>
-                <span className="listItem__extra">{extraInfo}</span>
+                </DescriptionStyles>
+                <CardFooterStyles>
+                    <SmallText>{extraInfo}</SmallText>
+                    <LinkStyles href='#'>{extraLink}</LinkStyles>
+                </CardFooterStyles>
             </figure>
-        </section>
+        </WrapperStyles>
     </ThemeProvider>
 );
 

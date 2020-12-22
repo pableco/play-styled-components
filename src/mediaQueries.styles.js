@@ -21,14 +21,6 @@ export default {
     and (device-height : 812px)
     and (-webkit-device-pixel-ratio : 3)`,
 
-    // ipad: `all and (device-width: 768px)
-    // and (device-height: 1024px)`,
-
-    // ipadPortrait: `all and (device-width: 768px) and
-    // (device-height: 1024px) and (orientation:portrait)`,
-
-    // ipadLandscape: `all and (device-width: 768px) and
-    // (device-height: 1024px) and (orientation:landscape)`
 };
 
 export const size = {
